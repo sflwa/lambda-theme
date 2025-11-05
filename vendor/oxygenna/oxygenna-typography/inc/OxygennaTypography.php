@@ -128,7 +128,7 @@ class OxygennaTypography
 
         // if lookup went ok we can go ahead and fetch the fonts
         if ($ip !== $google_font_domain) {
-            $google_api_url = 'https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyDVQGrQVBkgCBi9JgPiPpBeKN69jIRk8ZA';
+            $google_api_url = 'https://www.googleapis.com/webfonts/v1/webfonts?key=GOOGLEAPIKEYHERE';
             $remote_get = wp_remote_get($google_api_url, array('sslverify' => false));
             $response = wp_remote_retrieve_body($remote_get);
 
